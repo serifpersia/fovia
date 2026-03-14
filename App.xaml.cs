@@ -39,7 +39,11 @@ namespace fovia
         private static extern bool SetForegroundWindow(IntPtr hWnd);
 
         public static AppSettings Settings = new AppSettings();
-        private static readonly string SettingsPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "settings.json");
+        private static readonly string SettingsPath = Path.Combine(
+        Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData),
+        "fovia",
+        "settings.json"
+    );
 
         private IKeyboardMouseEvents? _hook;
         private Stopwatch _stopwatch = new Stopwatch();
@@ -52,6 +56,9 @@ namespace fovia
         {
             try
             {
+                string directory = Path.GetDirectoryName(SettingsPath)!;
+                if (!Directory.Exists(directory)) Directory.CreateDirectory(directory);
+
                 if (File.Exists(SettingsPath))
                 {
                     string json = File.ReadAllText(SettingsPath);
