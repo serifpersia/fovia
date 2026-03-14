@@ -1,4 +1,14 @@
+<div align="center">
+
+<img src="public/fovia.png" alt="fovia logo" width="200"/>
+
 # fovia
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
+[![GitHub stars](https://img.shields.io/github/stars/serifpersia/fovia.svg?style=flat-square)](https://github.com/serifpersia/fovia/stargazers)
+
+</div align="center">
+
 **fovia** is a fluid magnification tool for Windows, designed to provide smooth, fluid zooming and panning across your entire desktop. Unlike the default Windows Magnifier, fovia offers customizable tracking modes, independent zoom hotkey bindings, and a modern interface.
 
 ## Features
@@ -12,7 +22,7 @@
 
 ## Getting Started
 ### Installation
-1. Download it here [Releases Page](https://github.com/serifpersia/fovia/releases).
+1. Download it [here](https://github.com/serifpersia/fovia/releases).
 3. Extract the contents of the zip and run `setup.exe` to install fovia on your system.
 
 ### Usage
